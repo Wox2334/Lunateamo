@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Luna</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fde4e4;
+            color: #333;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        .container {
+            margin-top: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            display: none;
+        }
+        img {
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+        audio {
+            display: none;
+        }
+        .firma {
+            margin-top: 40px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #d63384;
+        }
+        .mensaje {
+            text-align: left;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-top: 30px;
+            white-space: pre-wrap;
+        }
+        #fecha-form {
+            margin-top: 50px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff85a2;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .heart {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background: red;
+            transform: rotate(45deg);
+            animation: float 6s linear infinite;
+            opacity: 0.6;
+        }
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: inherit;
+            border-radius: 50%;
+        }
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+        .heart::after {
+            left: -10px;
+            top: 0;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(45deg);
+            }
+            100% {
+                transform: translateY(-100vh) rotate(45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Introduce nuestra fecha especial</h1>
+    <p>Descubre un mensaje solo para ti 💖</p>
+
+    <div id="fecha-form">
+        <input type="text" id="fecha" placeholder="DD/MM/AA">
+        <button onclick="verificarFecha()">Ver mensaje</button>
+    </div>
+
+    <div class="container" id="contenido">
+        <audio autoplay loop>
+            <source src="vos.mp3" type="audio/mpeg">
+            Tu navegador no soporta el audio.
+        </audio>
+
+        <h1>Para ti, mi Luna hermosa</h1>
+        <p>Siempre serás la única dueña de mi corazón ❤️</p>
+
+        <div class="mensaje">
+<h2>NO SUELTES MI MANO, POR FAVOR</h2>
+Si pudiera abrir mi corazón y mostrarte todo lo que siento, si pudieras ver lo que significas para mí en cada pensamiento, en cada instante, entenderías por qué te pido esto.
+
+Desde que llegaste a mi vida, algo cambió dentro de mí.
+
+No fue un cambio abrupto ni forzado, sino algo que ocurrió poco a poco, sin darme cuenta. Un día desperté y supe que tu presencia me hacía bien, que en ti había una paz que no encontraba en ninguna otra parte, que tu compañía era de esas que no se buscan, pero cuando llegan, sabes que no quieres que se vayan nunca. Contigo aprendí que no se trata solo de llenar vacíos, sino de compartir la vida con alguien que, sin decir mucho, lo significa todo.
+
+No sé si alguna vez te he dicho con claridad lo importante que eres para mí. Tal vez lo he insinuado en palabras sueltas, en miradas, en pequeños gestos que intentaban decir más de lo que mi voz se atrevía. Pero hoy quiero que lo sepas: Eres un faro en mi vida, una luz que me guía, una presencia que me da calma. Cuando el mundo se siente pesado, cuando todo parece incierto, cuando el cansancio me consume, saber que estás ahí me da fuerza. No necesito que hagas nada en especial, no necesito grandes palabras ni promesas, solo saber que existes en mi vida hace que todo sea diferente. Tu risa tiene el poder de alejar la tristeza, tu voz calma mis miedos, y tu simple existencia me recuerda que hay personas que valen la pena, que hay lazos que no deben romperse.
+
+Por eso, te pido: No sueltes mi mano, por favor.
+
+No la sueltes cuando el tiempo pase y las cosas cambien.
+
+No la sueltes si un día la rutina nos hace sentir distantes, si la vida nos empuja en direcciones opuestas, si las circunstancias parecen querer alejarnos. No la sueltes cuando la distancia intente borrar lo que tenemos, cuando las obligaciones nos envuelvan, cuando el destino nos ponga a prueba.
+
+No la sueltes si alguna vez me ves en silencio, si parezco perdido, si me cuesta encontrar las palabras para decir cuánto significas para mí. Porque incluso en esos momentos, sigues siendo mi refugio, mi espacio seguro, la persona que me hace sentir que no estoy solo en este mundo.
+
+No la sueltes si un día sientes miedo, si la incertidumbre te abruma, si dudas de todo y no sabes hacia dónde ir. Porque quiero que sepas que yo también estaré aquí, sosteniendo tu mano con la misma fuerza con la que deseo que sostengas la mía. No quiero que el tiempo te arrebate de mi lado, no quiero que un día miremos atrás y nos demos cuenta de que dejamos ir algo tan valioso como lo es nuestra amistad
+
+Sé que la vida es incierta, que nada está escrito, que todo puede cambiar en un abrir y cerrar de ojos. Pero si hay algo que sí sé con certeza, es que no quiero un futuro en el que no estés. No quiero imaginar días en los que no pueda contar contigo, en los que el espacio que ocupas en mi vida se vuelva un recuerdo en lugar de una realidad.
+
+Por eso, pase lo que pase, sin importar qué vueltas dé el destino, quédate. No te vayas. No sueltes mi mano, por favor.
+        </div>
+
+        <img src="1000005608.jpg" alt="Foto uno">
+        <img src="1000007377.jpg" alt="Foto dos">
+        <img src="1000007381.jpg" alt="Foto tres">
+
+        <p class="firma">Mon amour, je t’aime ❤️</p>
+    </div>
+
+    <script>
+        function verificarFecha() {
+            const input = document.getElementById('fecha').value;
+            if (input === "16/08/24") {
+                document.getElementById('contenido').style.display = 'block';
+                document.getElementById('fecha-form').style.display = 'none';
+                iniciarCorazones();
+            } else {
+                alert("Esa no es nuestra fecha especial 💔");
+            }
+        }
+
+        function iniciarCorazones() {
+            for (let i = 0; i < 30; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.animationDuration = (5 + Math.random() * 5) + 's';
+                const color = Math.random() > 0.5 ? '#ffcc00' : '#a97449';
+                heart.style.background = color;
+                heart.style.zIndex = -1;
+                document.body.appendChild(heart);
+            }
+        }
+    </script>
+</body>
+</html>
