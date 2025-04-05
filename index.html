@@ -78,10 +78,12 @@
             <p style="margin-top: 50px; font-style: italic;">Mon amour 💛🤎</p>
         </div>
     </div>
-    <audio id="cancion" loop>
-        <source src="vos.mp3" type="audio/mpeg">
-        Tu navegador no soporta audio.
-    </audio>
+   <button onclick="document.getElementById('cancion').play()">▶ Reproducir canción</button>
+<audio id="cancion" loop>
+  <source src="vos.mp3" type="audio/mpeg">
+  Tu navegador no soporta el audio.
+</audio>
+
 
     <script>
         function verificarFecha() {
