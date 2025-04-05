@@ -1,111 +1,117 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para Luna</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to bottom right, #fff9e6, #e3d7c1);
-            color: #4a2c0a;
-            text-align: center;
-            padding: 30px;
-            overflow-x: hidden;
-        }
-        .hidden {
-            display: none;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff3d4;
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
-        input[type="text"] {
-            padding: 10px;
-            border-radius: 10px;
-            border: 1px solid #ccc;
-            margin-top: 20px;
-        }
-        button {
-            background-color: #f4c542;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 10px;
-            margin-top: 10px;
-            cursor: pointer;
-        }
-        #corazones {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 999;
-        }
-        .corazon {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: yellow;
-            clip-path: polygon(50% 0%, 100% 35%, 80% 100%, 50% 75%, 20% 100%, 0% 35%);
-            animation: flotar 5s infinite;
-            opacity: 0.7;
-        }
-        @keyframes flotar {
-            0% { transform: translateY(0); opacity: 1; }
-            100% { transform: translateY(-100vh); opacity: 0; }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para Luna</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #fff9e6, #e3d7c1);
+      color: #4a2c0a;
+      text-align: center;
+      padding: 30px;
+      overflow-x: hidden;
+    }
+    .hidden { display: none; }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff3d4;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    input[type="text"] {
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      margin-top: 20px;
+    }
+    button {
+      background-color: #f4c542;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    #corazones {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 999;
+    }
+    .corazon {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: yellow;
+      clip-path: polygon(50% 0%, 100% 35%, 80% 100%, 50% 75%, 20% 100%, 0% 35%);
+      animation: flotar 5s infinite;
+      opacity: 0.7;
+    }
+    @keyframes flotar {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-100vh); opacity: 0; }
+    }
+  </style>
 </head>
 <body>
-    <div id="corazones"></div>
-    <div class="container">
-        <h2>Introduce nuestra fecha para desbloquear un mensaje:</h2>
-        <input type="text" id="fecha" placeholder="dd/mm/aa">
-        <button onclick="verificarFecha()">Ver mensaje</button>
-        
-        <div id="mensaje" class="hidden">
-            <h1>NO SUELTES MI MANO, POR FAVOR</h1>
-            <p>Si pudiera abrir mi corazón y mostrarte todo lo que siento...</p>
-            <!-- Aquí va todo el mensaje completo -->
-            <p style="margin-top: 50px; font-style: italic;">Mon amour 💛🤎</p>
-        </div>
+  <div id="corazones"></div>
+  <div class="container">
+    <h2>Introduce nuestra fecha para desbloquear un mensaje:</h2>
+    <input type="text" id="fecha" placeholder="dd/mm/aa"/>
+    <button onclick="verificarFecha()">Ver mensaje</button>
+    <button onclick="document.getElementById('cancion').play()">▶ Reproducir canción</button>
+
+    <div id="mensaje" class="hidden">
+      <h1>NO SUELTES MI MANO, POR FAVOR</h1>
+      <p>Si pudiera abrir mi corazón y mostrarte todo lo que siento, si pudieras ver lo que significas para mí en cada pensamiento, en cada instante, entenderías por qué te pido esto.</p>
+      <p>Desde que llegaste a mi vida, algo cambió dentro de mí.</p>
+      <p>No fue un cambio abrupto ni forzado, sino algo que ocurrió poco a poco, sin darme cuenta. Un día desperté y supe que tu presencia me hacía bien, que en ti había una paz que no encontraba en ninguna otra parte, que tu compañía era de esas que no se buscan, pero cuando llegan, sabes que no quieres que se vayan nunca. Contigo aprendí que no se trata solo de llenar vacíos, sino de compartir la vida con alguien que, sin decir mucho, lo significa todo.</p>
+      <p>No sé si alguna vez te he dicho con claridad lo importante que eres para mí. Tal vez lo he insinuado en palabras sueltas, en miradas, en pequeños gestos que intentaban decir más de lo que mi voz se atrevía. Pero hoy quiero que lo sepas: Eres un faro en mi vida, una luz que me guía, una presencia que me da calma.</p>
+      <p>Cuando el mundo se siente pesado, cuando todo parece incierto, cuando el cansancio me consume, saber que estás ahí me da fuerza. No necesito que hagas nada en especial, no necesito grandes palabras ni promesas, solo saber que existes en mi vida hace que todo sea diferente. Tu risa tiene el poder de alejar la tristeza, tu voz calma mis miedos, y tu simple existencia me recuerda que hay personas que valen la pena, que hay lazos que no deben romperse.</p>
+      <p>Por eso, te pido: No sueltes mi mano, por favor.</p>
+      <p>No la sueltes cuando el tiempo pase y las cosas cambien.</p>
+      <p>No la sueltes si un día la rutina nos hace sentir distantes, si la vida nos empuja en direcciones opuestas, si las circunstancias parecen querer alejarnos. No la sueltes cuando la distancia intente borrar lo que tenemos, cuando las obligaciones nos envuelvan, cuando el destino nos ponga a prueba.</p>
+      <p>No la sueltes si alguna vez me ves en silencio, si parezco perdido, si me cuesta encontrar las palabras para decir cuánto significas para mí. Porque incluso en esos momentos, sigues siendo mi refugio, mi espacio seguro, la persona que me hace sentir que no estoy solo en este mundo.</p>
+      <p>No la sueltes si un día sientes miedo, si la incertidumbre te abruma, si dudas de todo y no sabes hacia dónde ir. Porque quiero que sepas que yo también estaré aquí, sosteniendo tu mano con la misma fuerza con la que deseo que sostengas la mía. No quiero que el tiempo te arrebate de mi lado, no quiero que un día miremos atrás y nos demos cuenta de que dejamos ir algo tan valioso como lo es nuestra amistad.</p>
+      <p>Sé que la vida es incierta, que nada está escrito, que todo puede cambiar en un abrir y cerrar de ojos. Pero si hay algo que sí sé con certeza, es que no quiero un futuro en el que no estés. No quiero imaginar días en los que no pueda contar contigo, en los que el espacio que ocupas en mi vida se vuelva un recuerdo en lugar de una realidad.</p>
+      <p>Por eso, pase lo que pase, sin importar qué vueltas dé el destino, quédate. No te vayas. No sueltes mi mano, por favor.</p>
+      <p style="margin-top: 50px; font-style: italic;">Mon amour 💛🤎</p>
     </div>
-   <button onclick="document.getElementById('cancion').play()">▶ Reproducir canción</button>
-<audio id="cancion" loop>
-  <source src="vos.mp3" type="audio/mpeg">
-  Tu navegador no soporta el audio.
-</audio>
+  </div>
 
+  <audio id="cancion" loop>
+    <source src="vos.mp3" type="audio/mpeg">
+    Tu navegador no soporta el audio.
+  </audio>
 
-    <script>
-        function verificarFecha() {
-            var fecha = document.getElementById("fecha").value.trim();
-            if (fecha === "16/08/24") {
-                document.getElementById("mensaje").classList.remove("hidden");
-                document.getElementById("cancion").play();
-            } else {
-                alert("Fecha incorrecta 💔");
-            }
-        }
+  <script>
+    function verificarFecha() {
+      var fecha = document.getElementById("fecha").value.trim();
+      if (fecha === "16/08/24") {
+        document.getElementById("mensaje").classList.remove("hidden");
+        document.getElementById("cancion").play();
+      } else {
+        alert("Fecha incorrecta 💔");
+      }
+    }
 
-        // Crear corazones flotantes
-        const colores = ["#f4c542", "#8b5e3c"];
-        setInterval(() => {
-            const corazon = document.createElement("div");
-            corazon.className = "corazon";
-            corazon.style.left = Math.random() * 100 + "vw";
-            corazon.style.backgroundColor = colores[Math.floor(Math.random() * colores.length)];
-            document.getElementById("corazones").appendChild(corazon);
-            setTimeout(() => corazon.remove(), 5000);
-        }, 300);
-    </script>
+    const colores = ["#f4c542", "#8b5e3c"];
+    setInterval(() => {
+      const corazon = document.createElement("div");
+      corazon.className = "corazon";
+      corazon.style.left = Math.random() * 100 + "vw";
+      corazon.style.backgroundColor = colores[Math.floor(Math.random() * colores.length)];
+      document.getElementById("corazones").appendChild(corazon);
+      setTimeout(() => corazon.remove(), 5000);
+    }, 300);
+  </script>
 </body>
 </html>
